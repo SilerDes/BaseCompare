@@ -7,4 +7,6 @@
     <string name="button_next">Next</string>
 
     <string name="warning_column_number_not_equals">Number of file columns not equal</string>
+    <string name="warning_column_type_not_equals">Type of column not equal</string>
+    <string name="warning_title">Warning</string>
 </resources>
