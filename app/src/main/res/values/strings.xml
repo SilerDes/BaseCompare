@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BaseCompare</string>
+
+    <string name="select_files_text_view">Select excel files</string>
+    <string name="select_file_text_view">Waiting to select</string>
+    <string name="button_select">Select</string>
+    <string name="button_next">Next</string>
+
+    <string name="warning_column_number_not_equals">Number of file columns not equal</string>
+</resources>

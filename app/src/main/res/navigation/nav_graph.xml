@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/selectFilesFragment">
+    <fragment
+        android:id="@+id/selectFilesFragment"
+        android:name="com.kazbekov.basecompare.fragments.SelectFilesFragment"
+        android:label="SelectFilesFragment"
+        tools:layout="@layout/fragment_select_files">
+        <action
+            android:id="@+id/action_selectFilesFragment_to_comparisonConfigurationFragment"
+            app:destination="@id/comparisonConfigurationFragment" />
+        <action
+            android:id="@+id/action_selectFilesFragment_to_fileProvider"
+            app:destination="@id/fileProvider" />
+        <action
+            android:id="@+id/action_selectFilesFragment_to_warningDialogFragment"
+            app:destination="@id/warningDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comparisonConfigurationFragment"
+        android:name="com.kazbekov.basecompare.fragments.ComparisonConfigurationFragment"
+        android:label="ComparisonConfigurationFragment"
+        tools:layout="@layout/fragment_comparison_configuration"/>
+    <fragment
+        android:id="@+id/fileProvider"
+        android:name="com.kazbekov.basecompare.fragments.FileProvider"
+        android:label="FileProvider"
+        tools:layout="@layout/fragment_file_provider"/>
+    <dialog
+        android:id="@+id/warningDialogFragment"
+        android:name="com.kazbekov.basecompare.fragments.WarningDialogFragment"
+        android:label="WarningDialogFragment"
+        tools:layout="@layout/dialog_fragment_warning">
+        <argument
+            android:name="warning"
+            app:argType="integer" />
+    </dialog>
+</navigation>
